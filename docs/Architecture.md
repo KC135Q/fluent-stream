@@ -35,3 +35,12 @@ Initial area of concern is the time to search based on a given IP.
   - Support
     - Log activity
     - Send periodic status message (# inquiries in past time period (minute?)), # blocked, mean time to process
+
+
+- Security (consider and recommend, do not implement)
+  - API gateway
+    - Same EC2 (private subnet)
+    - Public API with whitelisted IP addresses
+
+- High Availability
+  - Consider scaling EC2s using EBS

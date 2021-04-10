@@ -6,3 +6,5 @@
   - Starting with Node/TypeScript to AWS Lambda. Invocation trigger may be API Gateway dependent on architecture.
 
 - `blocklist-ipsets` review
+
+high availability deployments, benchmarks, and telemetry.
