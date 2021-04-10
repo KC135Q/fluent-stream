@@ -9,6 +9,8 @@
 
     - Which projects do we use for the pipeline?'
 
+  - Cloud native = on the cloud, or specific 
+
   - Confirm data flow:
 
     - Service is called with IP address argument (ipv4 format?)

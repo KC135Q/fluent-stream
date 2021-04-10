@@ -5,7 +5,7 @@
   - [ ] Checks IP address lists for every single attempted phone call placed on our network
     - [ ] (Part of a larger fraud detection system)
     - [ ] If the IP address is listed in any sources, then they should be returned.
-    - [ ] The service will retrieve and automatically update from https://github.com/firehol/blocklist-ipsets without any manual intervention. (Daily)
+    - [ ] The service will retrieve and automatically update from https://github.com/firehol/blocklist-ipsets without any manual intervention. 
 - [ ] (DevOps) Deliverables should include everything needed to deploy (and maintain) the service in a production AWS account.
 
 **BONUS**

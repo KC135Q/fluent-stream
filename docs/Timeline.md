@@ -14,6 +14,7 @@ Assign to timeline: TypeScript Best Practices, blocklist-ipsets review, definiti
   - Data format(s) - ipSearch and ipSort
   - List polling and consumption process
   - Pseudocode start (include testing)
+  - Allocate time to work through Radix sort application
 - 04.13.2021:
   - Progress Review
 - 04.15.2021:
