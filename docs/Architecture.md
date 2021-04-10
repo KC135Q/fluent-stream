@@ -10,7 +10,7 @@ Initial area of concern is the time to search based on a given IP.
     __OR__
   - hash each dotted decimal section as an index to a subset of the overall results
 
-- ipSort
+- ipSort (Radix sort)
   - `Slower` service responsible for...
     - Polling the lists
     - Processing a list (ensure no collisions)
