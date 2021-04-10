@@ -1,37 +1,33 @@
 export default class IpList {
-  class DottedDecimal {
-    [key: string] {
-      [key: string] {
-        [key: string] {
-          [key: string] {
-            source: string;
-          }
-        }
-      }
-    }
-  }
-  private min: number = 0;
-  private max: number = 255;
-  private numIps: number = 20;
+  // private DottedDecimal:{ [index:string] : {message: string} } = {};
+  private DottedDecimal: {
+    [index: string]: { [index: string]: { [index: string] :
+      { message: string }}}} = {};
 
-  constructor(private name: string = "John Doe", private age: number = 99) {
+  private max: number = 255;
+
+  constructor() {
     this.populateIpObject();
   }
 
   populateIpObject(): void {
-    const startTime = new Date();
-    console.log("Starting ...");
+    this.nestDottedDecimal(
+      Math.floor(Math.random() * this.max).toString(10),
+      Math.floor(Math.random() * this.max).toString(10),
+      Math.floor(Math.random() * this.max).toString(10),
+      Math.floor(Math.random() * this.max).toString(10)
+    );
+  }
 
-    for (let i = 0; i < this.numIps; i++) {
-      const one = Math.floor(Math.random() * this.max);
-      const two = Math.floor(Math.random() * this.max);
-      const three = Math.floor(Math.random() * this.max);
-      const four = Math.floor(Math.random() * this.max);
-      this.blockedIps[`${one}`][`${two}`][`${three}`][`${four}`].source = 42;
-    }
+  nestDottedDecimal(one: string, two: string, three: string, four: string) {
+    console.log(one, two, three, four);
+    this.DottedDecimal[one][two][three].message = four;
 
-    const endTime = new Date();
-    console.log(`Start: ${startTime}, End: ${endTime}`);
+
+    // Object.keys(otherObj).forEach(key =>
+    //   dictionary[key] = otherObj[key]);
+    // // no error even if key doesn't exist
+    // console.log(dictionary.f);
   }
 
   tellAboutSelf() {
@@ -39,6 +35,6 @@ export default class IpList {
   }
 
   getBlockedIps() {
-    return this.blockedIps;
+    return this.DottedDecimal;
   }
 }

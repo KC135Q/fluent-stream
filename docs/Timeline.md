@@ -10,6 +10,10 @@ Assign to timeline: TypeScript Best Practices, blocklist-ipsets review, definiti
 
 - 04.10.2021:
   - Progress Review
+  - Architectural Diagram
+  - Data format(s) - ipSearch and ipSort
+  - List polling and consumption process
+  - Pseudocode start (include testing)
 - 04.13.2021:
   - Progress Review
 - 04.15.2021:
