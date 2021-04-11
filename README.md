@@ -2,11 +2,6 @@
 
 Fluent Stream Coding Challenge
 
-## Getting started
-
-- `npm run serve` for localhost development
--
-
 ## Documentation
 
 - [Documentation](./docs/TOC.md)
